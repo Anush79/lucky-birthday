@@ -33,13 +33,13 @@ btn.addEventListener("click", function luckfinder() {
     const NewDob = clipString(birthday.value, '-');
     sum = findsum(NewDob);
 
-    if(luckynum.value===""){
-        output.innerText = "please enter some lucky num first!😥"
+    if(luckynum.value <= 0 ){
+        output.innerText = "Please enter some valid lucky num first!😥";
     }
     else if (sum % luckynum.value === 0) {
-        output.innerText= "Yuhooooo!!! Your birthday is Luckyyyy 🎉🍀💯😎🤘"
+        output.innerText= "Yuhooooo!!! Your birthday is Luckyyyy 🎉🍀💯😎🤘Partyyyy to banti hai!"
     }
-    else output.innerText="Aww ! It's okay , your birthday is not very lucky🙂";
+    else output.innerText="Aww ! It's okay , your birthday is not very lucky🙂 We build our own luck👍🏼";
     
 
 })
